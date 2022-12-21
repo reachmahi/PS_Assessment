@@ -21,6 +21,7 @@ Using a Terraform Provisioner, in combination with PowerShell, can help automate
 Steps to execute 
 
 1) SSH into ec2 instance and ensure terraform is installed in ubuntu instance and ensure git is also installed in it
+
 2.a Create a main.tf file which is the main configuration file and it has below contents in it
 
 When you check the file’s contents, you can see that it is responsible for creating an EC2 VM (aws_instance) and giving it many properties. Such as:
