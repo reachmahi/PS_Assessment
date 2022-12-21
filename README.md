@@ -51,6 +51,10 @@ The private_key is of the typical .ssh/id_rsa format from Linux. This line creat
 
 3) This helps in the infrastructure set up
 
+Useful links 
+https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/
+https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec
+
 Work in progress 
 To have these checks integrated with the existing code 
 
