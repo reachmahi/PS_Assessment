@@ -57,20 +57,32 @@ The private_key is of the typical .ssh/id_rsa format from Linux. This line creat
 3) This helps in the infrastructure set up once you hit terraform apply the resources which will be created after hitting terraform apply
 
 data.aws_availability_zones.azs
+
 data.aws_route_table.main_route_table
+
 data.aws_ssm_parameter.webserver-ami
+
 aws_default_route_table.internet_route
+
 aws_instance.webserver
+
 aws_internet_gateway.igw
+
 aws_key_pair.webserver-key
+
 aws_security_group.sg
+
 aws_subnet.subnet
+
 aws_vpc.vpc
 
 
-Useful links 
+Useful links and references if you want more details on any of the paremeters inside the configuration file
+
 https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/
+
 https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec
+
 
 Work in progress 
 To have these checks integrated with the existing code 
