@@ -27,9 +27,13 @@ Steps to execute
 When you check the file’s contents, you can see that it is responsible for creating an EC2 VM (aws_instance) and giving it many properties. Such as:
 
 The image you will install on your VM: data.aws_ssm_parameter.webserver-ami.value.
+
 A public IP address: associate_public_ip_address = true.
-The VM instance type: t2.micro.
+
+The VM instance type: t2.micro
+
 The key pair you want to use for this VM: aws_key_pair.webserver-key.key_name and key pair can be generated using ssh-keygen
+
 A few security groups: aws_security_group.sg.id.
 
 2.b The second file in the directory is the setup.tf file. Again, run the cat command below to check the contents of the setup.tf file
