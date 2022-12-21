@@ -1,4 +1,4 @@
-Terraform is an open-source tool that codifies APIs into declarative configuration files. Team members can share the configuration files amongst the team. You and your team can treat the Terraform configuration files as code: edit, review, and; version them.
+Terraform is an open-source tool that codifies APIs into declarative configuration files and provision resources in cloud
 
 Problem statement:
 Cloud
@@ -49,7 +49,7 @@ Next, comes the connection block: this block tells Terraform what kind of connec
 
 The private_key is of the typical .ssh/id_rsa format from Linux. This line creates a file called ~/.ssh/id_rsa and puts the AWS EC2 user’s PEM-encoded RSA key in it. Since you are SSHing into the EC2 with the PEM-encoded RSA key, the host has access to execute commands. Terraform will grab the contents from the variable declared earlier (associate_public_ip_address = true).
 
-3) This helps in the infrastructure set up
+3) This helps in the infrastructure set up once you hit terraform apply
 
 Useful links 
 https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/
@@ -58,7 +58,7 @@ https://developer.hashicorp.com/terraform/language/resources/provisioners/remote
 Work in progress 
 To have these checks integrated with the existing code 
 
-1.	Network only allows secured HTTP access from the outside.
+1.	Network only allows secured HTTP access from the outside. 
 2.	Versioning, audit trails are enabled on file/object stores
 3.	Logs are sent to an appropriate location
 4.	All data at rest for any databases/volumes are encrypted
